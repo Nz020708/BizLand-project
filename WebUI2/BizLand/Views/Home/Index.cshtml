@@ -1,0 +1,158 @@
+﻿@using BizLand.ViewModels
+@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<main>
+    <section id="welcome">
+
+        <div class="container">
+            <div class="col-12 ">
+                <div class="summary">
+                    <h2>
+                        Welcome to <span class="blue">BizLand</span>
+                    </h2>
+                    <p>We are team of talented designers making websites with Bootstrap</p>
+                    <div>
+                        <button>GET STARTED</button>
+                        <a href="#">
+                            <i class="fa-solid fa-circle-play"></i> <span>Watch Video</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="features">
+        <div class="container">
+            <div class="row myrow">
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-basketball"></i>
+                        </div>
+                        <div class="title">
+                            <a href="#">Lorem Ipsum</a>
+                        </div>
+                        <div class="about">
+
+                            <p>
+                                Lorem Ipsum
+                                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <div class="title">
+
+                            <a href="#">Sed ut perspiciatis</a>
+                        </div>
+                        <div class="about">
+
+                            <p>
+                                Sed ut perspiciatis
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                        <div class="title">
+                            <a href="#">Magni Dolores</a>
+                        </div>
+                        <div class="about">
+
+                            <p>
+                                Magni Dolores
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 part">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                        <div class="title">
+                            <a href="#">Nemo Enim</a>
+                        </div>
+                        <div class="about">
+
+                            <p>
+                                Nemo Enim
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us"></section>
+    <section id="our-team">
+        <div class="container ">
+            <h2>Our Hardworking <span class="blue">Team</span></h2>
+            <p class="about">Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p>
+            <div class="row">
+                <div class="card-deck cards">
+                    @foreach (var employee in Model.Team)
+                    {
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <img class="card-img-top" src="~/assets/images/@employee.Image" alt="Walter">
+                                <div class="card-body">
+                                    <h5 class="card-title ">@employee.Name</h5>
+                                    <p class="card-text">@employee.Profession</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    @*<div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="~/assets/images/Sarah.jpg" alt="Sarah">
+                            <div class="card-body">
+                                <h5 class="card-title">Sarah Jhonson</h5>
+
+                                <p class="card-text">Product Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="~/assets/images/William.jpg" alt="William">
+                            <div class="card-body">
+                                <h5 class="card-title">William Anderson</h5>
+
+                                <p class="card-text">CTO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card">
+                            <img class="card-img-top" src="~/assets/images/Amanda.jpg" alt="Amanda">
+                            <div class="card-body">
+                                <h5 class="card-title">Amanda Jepson</h5>
+                                <p class="card-text">Accountant</p>
+                            </div>
+                        </div>
+                    </div>*@
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>

@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;0,800;1,700&family=Roboto:wght@100;400;500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <title>BizLand</title>
+</head>
+
+<body>
+    <header>
+        <div class="contact">
+            <div class="container">
+                <div class="row myRow">
+                    <div class="contact-with">
+                        <a class="email" href="https://mail.ru/">
+                            <i class="fa-regular fa-envelope"></i>
+                            contact@example.com
+                        </a>
+                        <a href="#"><i class="fa-solid fa-mobile-button"></i> +1 5589 55488 55</a>
+                    </div>
+                    <div class="social-accounts">
+                        <a class="social-media" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="social-media" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="social-media" href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="social-media" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <nav> -->
+        <!-- <div class="container">
+                 <div class="navbar">
+
+                    <div class="logo">
+                        <a href="#">
+                            <h1>BizLand</h1><span>.</span>
+
+                        </a>
+                    </div>
+                    <div class="list">
+                        <a class="hover-underline-animation" href="#home">Home</a>
+                        <a class="hover-underline-animation" href="#about">About</a>
+                        <a class="hover-underline-animation" href="#services">Services</a>
+                        <a class="hover-underline-animation" href="#portfolio">Portfolio</a>
+                        <a class="hover-underline-animation" href="#team">Team</a>
+                        <div class="dropdown">
+                            <button class="dropbtn hover-underline-animation">Dropdown
+
+                            </button>
+                            <div class="dropdown-content">
+                                <a class="hover-underline-animation" href="#">Drop Down 1</a>
+                                <a class="hover-underline-animation" href="#">Deep Drop Down
+                                    <div class="dropdown-content">
+                                        <a class="hover-underline-animation" href="#">Drop Down 1</a>
+                                        <a class="hover-underline-animation" href="#">Deep Drop 2</a>
+                                        <a class="hover-underline-animation" href="#">Drop Down 2</a>
+                                        <a class="hover-underline-animation" href="#">Drop Down 3</a>
+                                        <a class="hover-underline-animation" href="#">Drop Down 4</a>
+
+                                    </div>
+                                </a>
+                                <a class="hover-underline-animation" href="#">Drop Down 2</a>
+                                <a class="hover-underline-animation" href="#">Drop Down 3</a>
+                                <a class="hover-underline-animation" href="#">Drop Down 4</a>
+
+                            </div>
+                        </div>
+                        <a class="hover-underline-animation" href="#contact">Contact</a>
+
+                    </div>
+                </div> -->
+        <!-- </div> -->
+        <!-- </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
+                    BizLand
+                    <span class="blue">.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse list" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-list">
+                        <li class="nav-item active">
+                            <a class="nav-link hover-underline-animation" href="#">
+                                Home <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="#our-team">Team</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle hover-underline-animation" href="#"
+                               id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                               aria-expanded="false">
+                                Drop Down
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Drop Down 1</a>
+                                <a class="dropdown-item" href="#">Deep Drop Down </a>
+                                <a class="dropdown-item" href="#">Drop Down 2</a>
+                                <a class="dropdown-item" href="#">Drop Down 3</a>
+                                <a class="dropdown-item" href="#">Drop Down 4</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-underline-animation" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+        @RenderBody()
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+    <script src="~/assets/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
+
