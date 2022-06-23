@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  .contact {
+    padding: 8px;
+    background-color: $primary-color;
+
+    .myRow {
+      justify-content: space-between;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .email {
+        margin-right: 20px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .social-media {
+        margin: 0px 8px;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  nav {
+    overflow: hidden;
+    background-color: rgb(253, 253, 253);
+    position: fixed;
+    z-index: 5;
+
+    .logo {
+      font-weight: 600;
+      font-size: 30px;
+     
+    }
+
+    .list {
+      flex-grow: 0;
+    }
+
+    a {
+      float: left;
+      font-size: 16px;
+      color: rgb(10, 10, 10);
+      padding: 14px 16px;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary-color;
+        text-decoration: none;
+      }
+    }
+
+    .nav-list {
+      li {
+        display: inline-block;
+        padding: 0.3em 0.5em;
+        position: relative;
+        overflow: hidden;
+        &::before {
+          position: absolute;
+          display: block;
+          content: "";
+          bottom: 0;
+          left: -100%;
+          width: 100%;
+          height: 2px;
+          text-align: center;
+          transition: 0.4s;
+          background-color: $primary-color;
+        }
+        &:hover::before {
+          left: 0%;
+        }
+      }
+      .active {
+        &::before {
+          left: 0%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .social-accounts {
+    display: none;
+  }
+
+  .contact-with {
+    margin: 0 auto;
+  }
+}
+
+#welcome {
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 700px;
+  position: relative;
+  z-index: 0;
+  &::after {
+    content: "";
+    background: url("/assets/images/white.jpg");
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
+  h2 {
+    font-size: 55px;
+    font-weight: 700;
+    span {
+      color: $primary-color;
+    }
+  }
+
+  p {
+    font-size: 27px;
+  }
+
+  button {
+    padding: 8px 25px;
+    background-color: $primary-color;
+    border: 0;
+  }
+
+  a {
+    .span {
+      color: black;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .summary {
+    position: absolute;
+    top: 200px;
+  }
+  @media only screen and (max-width: 770px) {
+    h2 {
+      font-size: 43px;
+      font-weight: 700;
+      span {
+        color: $primary-color;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
+#features {
+  min-height: 350px;
+  font-family: $second-font;
+  .myrow {
+    justify-content: space-evenly;
+    padding: 60px 0px;
+    .card {
+      padding: 25px;
+      box-shadow: 0.1px 0.1px 10px #888888;
+      background: linear-gradient(to top, $primary-color 50%, #fff 50%);
+      background-size: 100% 200%;
+      background-position: top left;
+      transition: all 0.5s ease-in-out;
+
+      i {
+        color: $primary-color;
+        font-size: 40px;
+      }
+      .about {
+        font-size: 14px;
+        color: rgb(66, 65, 65);
+      }
+      a {
+        font-weight: 700;
+        text-decoration: none;
+        color: black;
+      }
+      &:hover {
+        background-position: bottom left;
+        color: #fff;
+
+        .about,
+        a,
+        i {
+          color: white;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 970px) {
+   .card{
+    margin: 20px 0px ;
+   }
+  }
+}
+#our-team{
+    background-color:#f6f9fe ;
+    min-height: 500px;
+   h2 {
+    text-align: center;
+    font-weight: 700;
+   } 
+  
+    .about{
+        max-width: 500px;        
+         margin: 0 auto;
+         text-align: center;
+        
+    }
+    .cards{
+        margin-top: 50px;
+        .card{
+            width: 260px;
+            p{
+                color: gray;
+            }
+           }
+    }
+  
+   
+}

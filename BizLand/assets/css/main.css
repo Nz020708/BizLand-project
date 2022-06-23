@@ -1,0 +1,272 @@
+.blue {
+  color: #106EEA;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header .contact {
+  padding: 8px;
+  background-color: #106EEA;
+}
+
+header .contact .myRow {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .contact .myRow a {
+  color: white;
+  text-decoration: none;
+}
+
+header .contact .myRow .email {
+  margin-right: 20px;
+}
+
+header .contact .myRow .email:hover {
+  text-decoration: underline;
+}
+
+header .contact .myRow .social-media {
+  margin: 0px 8px;
+  opacity: 0.6;
+}
+
+header .contact .myRow .social-media:hover {
+  opacity: 1;
+}
+
+header nav {
+  overflow: hidden;
+  background-color: #fdfdfd;
+  position: fixed;
+  z-index: 5;
+}
+
+header nav .logo {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+header nav .list {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+header nav a {
+  float: left;
+  font-size: 16px;
+  color: #0a0a0a;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  color: #106EEA;
+  text-decoration: none;
+}
+
+header nav .nav-list li {
+  display: inline-block;
+  padding: 0.3em 0.5em;
+  position: relative;
+  overflow: hidden;
+}
+
+header nav .nav-list li::before {
+  position: absolute;
+  display: block;
+  content: "";
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  text-align: center;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #106EEA;
+}
+
+header nav .nav-list li:hover::before {
+  left: 0%;
+}
+
+header nav .nav-list .active::before {
+  left: 0%;
+}
+
+@media only screen and (max-width: 767px) {
+  .social-accounts {
+    display: none;
+  }
+  .contact-with {
+    margin: 0 auto;
+  }
+}
+
+#welcome {
+  background-image: url("/assets/images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 700px;
+  position: relative;
+  z-index: 0;
+}
+
+#welcome::after {
+  content: "";
+  background: url("/assets/images/white.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#welcome h2 {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+#welcome h2 span {
+  color: #106EEA;
+}
+
+#welcome p {
+  font-size: 27px;
+}
+
+#welcome button {
+  padding: 8px 25px;
+  background-color: #106EEA;
+  border: 0;
+}
+
+#welcome a .span {
+  color: black;
+}
+
+#welcome a .span:hover {
+  color: #106EEA;
+}
+
+#welcome a:hover {
+  text-decoration: none;
+}
+
+#welcome .summary {
+  position: absolute;
+  top: 200px;
+}
+
+@media only screen and (max-width: 770px) {
+  #welcome h2 {
+    font-size: 43px;
+    font-weight: 700;
+  }
+  #welcome h2 span {
+    color: #106EEA;
+  }
+  #welcome p {
+    font-size: 18px;
+  }
+}
+
+#features {
+  min-height: 350px;
+  font-family: "Roboto", sans-serif;
+}
+
+#features .myrow {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 60px 0px;
+}
+
+#features .myrow .card {
+  padding: 25px;
+  -webkit-box-shadow: 0.1px 0.1px 10px #888888;
+          box-shadow: 0.1px 0.1px 10px #888888;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #106EEA), color-stop(50%, #fff));
+  background: linear-gradient(to top, #106EEA 50%, #fff 50%);
+  background-size: 100% 200%;
+  background-position: top left;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#features .myrow .card i {
+  color: #106EEA;
+  font-size: 40px;
+}
+
+#features .myrow .card .about {
+  font-size: 14px;
+  color: #424141;
+}
+
+#features .myrow .card a {
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+#features .myrow .card:hover {
+  background-position: bottom left;
+  color: #fff;
+}
+
+#features .myrow .card:hover .about,
+#features .myrow .card:hover a,
+#features .myrow .card:hover i {
+  color: white;
+}
+
+@media only screen and (max-width: 970px) {
+  #features .card {
+    margin: 20px 0px;
+  }
+}
+
+#our-team {
+  background-color: #f6f9fe;
+  min-height: 500px;
+}
+
+#our-team h2 {
+  text-align: center;
+  font-weight: 700;
+}
+
+#our-team .about {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#our-team .cards {
+  margin-top: 50px;
+}
+
+#our-team .cards .card {
+  width: 260px;
+}
+
+#our-team .cards .card p {
+  color: gray;
+}
+/*# sourceMappingURL=main.css.map */
